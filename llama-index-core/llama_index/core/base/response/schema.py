@@ -97,7 +97,7 @@ class StreamingResponse:
     metadata: Optional[Dict[str, Any]] = None
     response_txt: Optional[str] = None
 
-    def __str__(self) -> str:
+    def str(self) -> str:
         """Convert to string representation."""
         if self.response_txt is None and self.response_gen is not None:
             response_txt = ""
